@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background-color: transparent;
+}
+/* Header title  */
+.title {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+body {
+  background-color: aliceblue;
+}
+/* Image list box  */
+.box {
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  height: 20rem;
+  width: 40%;
+  overflow-y: auto;
+  background-color: rgb(213, 196, 196);
+  display: flex;
+  flex-direction: column;
+}
+.box h1 {
+  display: flex;
+  justify-content: center;
+}
+/* Image list  */
+.img {
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  display: flex;
+  padding: 3px 5px;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+.name {
+  width: 70%;
+  max-height: 24px;
+  font-size: 22px;
+  overflow-y: hidden;
+}
+.btn {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  width: 30%;
+}
+.btn button {
+  background-color: greenyellow;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 300ms;
+}
+.btn button:hover {
+  background-color: rgb(51, 153, 56);
+}
+.delete {
+  color: red;
+  cursor: pointer;
+  transition-duration: 300ms;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+}
+.delete:hover {
+  background-color: rgb(46, 56, 65);
+}
+.upload-box {
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(95, 187, 187);
+  width: fit-content;
+  margin: auto;
+  margin-top: 0.9rem;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.upload-box:hover {
+  background-color: rgb(101, 135, 124);
+  color: white !important;
+}
+#files {
+  display: none;
+}
+.add {
+  background-color: greenyellow;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  display: flex;
+  width: fit-content;
+  border-radius: 2rem;
+  margin: auto;
+  justify-content: center;
+  margin-top: 0.4rem;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+.add:hover {
+  background-color: rgb(66, 228, 66);
+}
+
+.done {
+  width: fit-content;
+  margin: auto;
+}
+.doneBtn {
+  padding: 3px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+/* presentation css  */
+.main {
+  position: relative;
+  height: 30rem;
+  width: 60rem;
+  margin: 2rem auto;
+  padding: 0.2rem;
+  border: 2px solid rgb(182, 141, 141);
+}
+.main img {
+  height: 98%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.left {
+  position: absolute;
+  bottom: 50%;
+  font-size: 2rem;
+  transition-duration: 300ms;
+}
+.left:hover {
+  cursor: pointer;
+  background-color: rgb(190, 202, 212);
+}
+.right {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  transition-duration: 300ms;
+}
+.right:hover {
+  cursor: pointer;
+  background-color: rgb(190, 202, 212);
+}
+/* Slider container */
+.slide {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+/* Control buttons */
+button.left,
+button.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+button.left {
+  left: 10px;
+}
+
+button.right {
+  right: 10px;
+}

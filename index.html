@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 430px)"
+      href="mobile.css"
+    />
+    <link rel="shortcut icon" href="/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="utility.css" />
+    <title>Create a presentation || Developed by Istiak Rahman</title>
+  </head>
+  <body>
+    <h1 class="title">Slide Show Viewer</h1>
+    <div class="index">
+      <div class="upload-box"><h1>Upload Here</h1></div>
+      <span class="add hidden">Add</span>
+      <input type="file" name="files" accept="image/*, video/*" id="files" />
+      <div class="box">
+        <h1 class="box-title">Your uploaded photos</h1>
+        <ul class="all-list"></ul>
+      </div>
+      <div class="done">
+        <button class="doneBtn hidden">Done</button>
+      </div>
+    </div>
+    <div class="main hidden">
+     <span class="left">&lt;</span>
+      <span class="right">&gt;</span>
+      <img class="img slide"></img>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
